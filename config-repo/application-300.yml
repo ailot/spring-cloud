@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    dbcp2:
+      url: jdbc:mysql://10.128.31.126:3306/meshop?useUnicode=true&characterEncoding=UTF8
+      username: wduser
+      password: wduser
+      driver-class-name: com.mysql.jdbc.Driver
