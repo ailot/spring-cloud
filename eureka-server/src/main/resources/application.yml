@@ -1,0 +1,15 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: @project.artifactId@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9090/eureka
+  server:
+    enable-self-preservation: false
