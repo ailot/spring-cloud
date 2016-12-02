@@ -1,0 +1,14 @@
+server:
+  port: 7074
+spring:
+  application:
+    name: gateway
+zuul:
+  routes:
+      service-a:
+       path: /service-a/**
+       serviceId: eureka-client
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka/

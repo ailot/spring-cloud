@@ -14,6 +14,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home(){
+        System.out.println("service - 1");
         return "hello world 7070";
     }
 }

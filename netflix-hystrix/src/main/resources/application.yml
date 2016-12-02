@@ -2,4 +2,17 @@ server:
   port: 9093
 spring:
   application:
-    name: hystrix
+    name: route
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://localhost:9090/eureka/
+#turbine:
+#  aggregator:
+#    clusterConfig: FEIGN-CLIENT
+#  appConfig: feign-client
+#  clusterNameExpression: metadata['cluster']

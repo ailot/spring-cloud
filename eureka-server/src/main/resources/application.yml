@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: @project.artifactId@
+  boot:
+    admin:
+      url: http://127.0.0.1:8088
 eureka:
   instance:
     hostname: localhost

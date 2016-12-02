@@ -14,8 +14,9 @@ import org.springframework.stereotype.Service;
 public class HystrixService {
 
     @Autowired
-    private CallDependencyService dependencyService;
-    public String callDependencyService() {
+    private DependencyService dependencyService;
+
+    public String callService(){
         return dependencyService.mockGetUserInfo();
     }
 }

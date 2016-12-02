@@ -17,12 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class HystrixController {
 
     @Autowired
-    private HystrixService service;
-    /**
-     * 调用依赖的服务
-     */
-    @RequestMapping("/call")
-    public String callDependencyService(){
-        return service.callDependencyService();
+    private HystrixService hystrixService;
+
+    @RequestMapping("call")
+    public String callService(){
+        return hystrixService.callService();
     }
 }
